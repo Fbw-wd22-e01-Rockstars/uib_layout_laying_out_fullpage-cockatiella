@@ -1,34 +1,58 @@
-body {
-  background-color: grey;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+.container {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+}
+
+/* SIDEBAR */
+.container-sidebar {
+}
+.sidebar {
+  background-color: white;
+  width: 10%;
+  height: 100px;
+  padding: 10px;
+}
+.sidebar ul {
+  height: 10px;
+}
+.sidebar li {
+  list-style-type: none;
+}
+
+/* Title */
 
 nav {
-  height: 60px;
+  height: 50px;
+  width: 100%;
   background-color: black;
   color: white;
-  font-size: 25px;
-  font-weight: bolder;
-  padding-top: 15px;
-  padding-left: 10px;
+  font-size: 21px;
+  padding: 5px;
 }
 
-/* HEADER */
+/* Header */
 
 .header {
+  height: 45px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
 }
 
-.header a {
+a {
   text-decoration: none;
   color: white;
   font-size: 25px;
-  font-weight: bold;
-  padding: 15px;
+  width: 40%;
 }
-/* ******************************************************** */
 
 /* BOXES */
 
@@ -36,38 +60,16 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
-  bottom: 550px;
-  left: 180px;
 }
 
-.item {
-  height: 200px;
-  width: 250px;
+.box {
+  width: 200px;
+  height: 150px;
   background-color: black;
   color: white;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 50px solid rgb(54, 54, 54);
-  margin-bottom: 20px;
-}
-
-/* ********************************************************* */
-
-/* SIDEBAR */
-
-.sidebar {
-  width: 150px;
-  height: 600px;
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sidebar li {
-  list-style-type: none;
-  font-size: 20px;
+  text-align: center;
+  margin: 2% 1%;
+  margin-left: 130px;
+  font-size: 25px;
+  border-bottom: 40px solid rgb(61, 59, 59);
 }
