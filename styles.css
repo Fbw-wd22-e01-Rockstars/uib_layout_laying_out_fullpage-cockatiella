@@ -12,16 +12,20 @@
 
 /* SIDEBAR */
 .container-sidebar {
+  display: inline-flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  position: relative;
+  top: 60px;
 }
 .sidebar {
   background-color: white;
-  width: 10%;
-  height: 100px;
+  width: 120px;
+  height: 350px;
   padding: 10px;
 }
-.sidebar ul {
-  height: 10px;
-}
+
 .sidebar li {
   list-style-type: none;
 }
@@ -42,9 +46,11 @@ nav {
 .header {
   height: 45px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 
 a {
@@ -68,8 +74,10 @@ a {
   background-color: black;
   color: white;
   text-align: center;
-  margin: 2% 1%;
-  margin-left: 130px;
+  margin-bottom: 10px;
+  margin-left: 22%;
+  position: relative;
+  bottom: 290px;
   font-size: 25px;
   border-bottom: 40px solid rgb(61, 59, 59);
 }
