@@ -5,20 +5,26 @@
 }
 
 .container {
-  background-color: grey;
+  background-color: rgb(54, 53, 53);
   height: 100%;
   width: 100%;
+}
+
+.main {
+  background-color: darkgray;
+  height: 100vh;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  padding-top: 10px;
 }
 
 /* SIDEBAR */
 
 .container-sidebar {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   flex-flow: wrap;
-  justify-content: flex-start;
-  position: relative;
-  top: 60px;
 }
 .sidebar {
   background-color: white;
@@ -67,6 +73,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .box {
@@ -78,7 +85,7 @@ a {
   margin-bottom: 10px;
   margin-left: 15%;
   position: relative;
-  bottom: 290px;
+  bottom: 350px;
   font-size: 25px;
   border-bottom: 40px solid rgb(61, 59, 59);
 }
